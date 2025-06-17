@@ -29,6 +29,7 @@ function select(ansId) {
         selectAns = ansId;
         isActive = true;
         console.log(ansId);
+        document.getElementById(ansId).classList.add('choosenAns');
     }
 }
 
