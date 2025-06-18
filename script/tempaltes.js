@@ -1,3 +1,28 @@
+function showStartscreen() {
+    let contentRef = document.getElementById('content');
+    contentRef.innerHTML = "";
+    contentRef.innerHTML = 
+        `
+            <div>
+                <h2 class="start-headline">Wilkommen bei GNOTHI - erkenne dich selbst</h2>
+
+                <div class="start-content">
+                    <h4 class="start-subline">Der achtsammer Selbsttest</h4>
+
+                    <div>
+                        Bitte beantworte die nun folgenden Fragen in Bezug auf dich selbst. <br>
+                        <br>
+                        Sei dabei bitte ehrlich zu dir selbst und lass dir für jede Frage Zeit. <br>
+                        Fühle bei jeder Frage in dich hinein und wähle die Antwort, die am besten passt.
+                    </div>
+                    <div class="btn-area">
+                        <button class="start-btn" onclick="start()">Los geht's!</button>
+                    </div>
+                </div>
+            </div>
+        `;
+}
+
 function showRes1(sum) {
     let contentRef = document.getElementById('content');
     contentRef.innerHTML = "";
@@ -115,7 +140,7 @@ function getQuestTemplate(quest, ans1, ans2, ans3, ans4, ans5, ans6) {
                 <div class="answer" id="ans6" onclick="select('ans6')">${ans6}</div>
             </div>
             <div class="btn-area">
-                <button onclick="nextQuestion()">Nächste Frage</button>
+                <button class="next-btn" onclick="nextQuestion()">Nächste Frage</button>
             </div>
         </div>
     `;

@@ -3,8 +3,18 @@ let currentQuestion = 0;
 let score = [];
 let selectAns = null;
 
+let starMelodie = new Audio('./assets/audio/starHarp.mp3');
+let clickSound = new Audio('./assets/audio/click.mp3');
+let endMelodie = new Audio('./assets/audio/endHarp.mp3'); 
+
 function init() {
+    showStartscreen();
+}
+
+function start() {
+    showHeadline();
     renderQuestion(currentQuestion);
+    starMelodie.play();
 }
 
 function renderQuestion(i) {
@@ -30,6 +40,7 @@ function select(ansId) {
         isActive = true;
         console.log(ansId);
         document.getElementById(ansId).classList.toggle('choosenAns');
+        clickSound.play();
     }
 }
 
@@ -86,6 +97,12 @@ function showResult() {
     } else {
         showRes5();
     }
+    endMelodie.play();
+}
+
+function showHeadline() {
+    let x = document.getElementById('main-headline');
+    x.classList.toggle('show');
 }
 
 

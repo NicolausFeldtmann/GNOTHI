@@ -9,7 +9,7 @@ let questions = [
         "answer6": "Zu keinem Zeitpunkt",
     },
     {
-        "question": "Hab ivh mivh in letzter Teit ruhig und endpannt gefühlt?",
+        "question": "Hab ich mich in letzter Zeit ruhig und endpannt gefühlt?",
         "answer1": "Die ganze Zeit",
         "answer2": "Meistens",
         "answer3": "Überwiegend schon",
@@ -27,7 +27,7 @@ let questions = [
         "answer6": "Zu keinem Zeitpunkt",
     },
     {
-        "question": "Hab ihc mich zuletzt Morgens frisch und ausgeruht gefühlt?",
+        "question": "Hab ich mich zuletzt Morgens frisch und ausgeruht gefühlt?",
         "answer1": "Die ganze Zeit",
         "answer2": "Meistens",
         "answer3": "Überwiegend schon",
@@ -36,7 +36,7 @@ let questions = [
         "answer6": "Zu keinem Zeitpunkt",
     },
     {
-        "question": "War in den letzten Wochen mein Alltag voller Ding die mich interessieren?",
+        "question": "War in den letzten Wochen mein Alltag voller Dinge, die mich interessieren?",
         "answer1": "Die ganze Zeit",
         "answer2": "Meistens",
         "answer3": "Überwiegend schon",
@@ -63,7 +63,7 @@ let questions = [
         "answer6": "Zu keinem Zeitpunkt",
     },
     {
-        "question": "War ich in den letzten zwei Woche offen für neues unf ungewohntes?",
+        "question": "War ich in den letzten zwei Woche offen für neues und ungewohntes?",
         "answer1": "Die ganze Zeit",
         "answer2": "Meistens",
         "answer3": "Überwiegend schon",
@@ -72,7 +72,7 @@ let questions = [
         "answer6": "Zu keinem Zeitpunkt",
     },
     {
-        "question": "Konnte ich zuletzt mir ohne Gewissensbiss Pausen nehmen?",
+        "question": "Konnte ich zuletzt mir ohne Gewissensbisse Pausen nehmen?",
         "answer1": "Die ganze Zeit",
         "answer2": "Meistens",
         "answer3": "Überwiegend schon",
@@ -99,7 +99,7 @@ let questions = [
         "answer6": "Zu keinem Zeitpunkt",
     },
     {
-        "question": "Konnte ich denn ind letzter Zeit gut und ausreichen Schalf finden?",
+        "question": "Konnte ich denn in der letzter Zeit gut und ausreichend Schalf finden?",
         "answer1": "Die ganze Zeit",
         "answer2": "Meistens",
         "answer3": "Überwiegend schon",
