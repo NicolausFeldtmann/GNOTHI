@@ -3,6 +3,7 @@
 }
 
 body{
+    font-family: 'Comfortaa';
     background-color: rgb(113, 191, 227);
     display: flex;
     flex-direction: column;
@@ -10,24 +11,38 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 h1{
+    margin: 12px 0px 0px 0px;
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: white;
+    width: auto;
+    padding: 8px 12px 8px 12px;
+    border: gray solid 1px;
+    border-radius: 10px;
+    box-shadow: 13px 17px 32px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 13px 17px 32px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 17px 32px 0px rgba(0,0,0,0.75);
 }
 
 .content{
     margin: 24px 0px 0px 0px;
     padding: 24px 8px 24px 8px;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .question-body{
+    height: 75%;
+    width: 75%;
+    position: absolute;
     background-color: white;
     padding: 24px 8px 24px 8px;
     border: gray solid 1px;
@@ -36,38 +51,53 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 13px 17px 32px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 13px 17px 32px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 17px 32px 0px rgba(0,0,0,0.75);
 }
 
 .question{
-    font-size: 24px;
+    font-size: 34px;
 }
 
 .answers{
+    width: 80%;
+    height: 100%;
+    font-size: 28px;
     margin: 12px 0px 12px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border: gray solid 1px;
     border-radius: 10px;
     font-size: 24px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
 }
 
 .answer{
-    width: 90%;
+    padding: 8px;
+    font-size: 36px;
+    background-color: rgb(113, 191, 227);
+    color: white;
+    width: 70%;
+    height: 60%;
     display: flex;
     text-align: center;
+    align-items: center;
     justify-content: center;
     margin: 8px 4px 8px 4px;
     padding: 4px 4px 4px 4px;
     border: solid gray 1px;
     border-radius: 10px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
 }
 
-.choseenAns{
-    background-color: aqua !important;
+.choosenAns{
+    background-color: rgb(179, 230, 252) !important;
 }
 
-.answers:hover{
+.answer:hover{
     cursor: pointer;
+    background-color: rgb(179, 230, 252);
 }
