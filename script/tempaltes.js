@@ -3,13 +3,13 @@ function showStartscreen() {
     contentRef.innerHTML = "";
     contentRef.innerHTML = 
         `
-            <div>
+            <div class="start-screen">
                 <h2 class="start-headline">Wilkommen bei GNOTHI - erkenne dich selbst</h2>
 
                 <div class="start-content">
                     <h4 class="start-subline">Der achtsammer Selbsttest</h4>
 
-                    <div>
+                    <div class="start-txt">
                         Bitte beantworte die nun folgenden Fragen in Bezug auf dich selbst. <br>
                         <br>
                         Sei dabei bitte ehrlich zu dir selbst und lass dir für jede Frage Zeit. <br>
