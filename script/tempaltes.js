@@ -17,6 +17,7 @@ function showStartscreen() {
                     </div>
                     <div class="btn-area">
                         <button class="start-btn" onclick="start()">Los geht's!</button>
+                        <button class="start-btn" onclick="showData()">Verlauf anzeigen</button>
                     </div>
                 </div>
             </div>
@@ -36,6 +37,9 @@ function showRes1(sum) {
                     Du machtst so alles Richtig. <br>
                     Gönn dir was schönes!
                 </div>
+                <div class="end-screen-btn-area">
+                    <button class="end-screen-btn" onclick="saveResult()">Ergebnis speichern</button>
+                </div>
             </div>
         `;
 }
@@ -52,6 +56,9 @@ function showRes2(sum) {
                     Es macht ganz den Eindruck, als ginge es dir im Augelblick richtig gut! <br>
                     Achte ein bischen auf dich und alles bleibt in bester Ordung. <br>
                     Mach mal n pause und versuch dich ein wenig zu endpannen.
+                </div>
+                                <div class="end-screen-btn-area">
+                    <button class="end-screen-btn" onclick="saveResult()">Ergebnis speichern</button>
                 </div>
             </div>
         `;
@@ -75,6 +82,9 @@ function showRes3(sum) {
                     Und mach dir deswegen keine zusätlichen Sorgen! <br>
                     Sowas ist von Zeit zu Zeit normal!
                 </div>
+                <div class="end-screen-btn-area">
+                    <button class="end-screen-btn" onclick="saveResult()">Ergebnis speichern</button>
+                </div>
             </div>
         `;
 }
@@ -96,6 +106,9 @@ function showRes4(sum) {
                     <br>
                     Das ist sicherlich alles schlimm, aber das wird so nicht bleiben! <br>
                     Du kommst da auch wieder raus!
+                </div>
+                <div class="end-screen-btn-area">
+                    <button class="end-screen-btn" onclick="saveResult()">Ergebnis speichern</button>
                 </div>
             </div>
         `;
@@ -121,6 +134,9 @@ function showRes5(sum) {
                     <br>
                     <br>
                     <a class="phone" href="tel:0800/1110111">Krisen Telefon</a>
+                </div>
+                <div class="end-screen-btn-area">
+                    <button class="end-screen-btn" onclick="saveResult()">Ergebnis speichern</button>
                 </div>
             </div>
         `;

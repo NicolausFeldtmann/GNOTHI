@@ -1,6 +1,11 @@
 let isActive = false;
 let currentQuestion = 0;
+
 let score = [];
+let results = [];
+
+let currentDate = [];
+let resultsDate = [];
 let selectAns = null;
 
 let starMelodie = new Audio('./assets/audio/starHarp.mp3');
@@ -98,6 +103,7 @@ function showResult() {
         showRes5();
     }
     endMelodie.play();
+    getCurrentDate();
 }
 
 function showHeadline() {
@@ -105,6 +111,41 @@ function showHeadline() {
     x.classList.toggle('show');
 }
 
+function showData() {
+    load();
+}
+
+function saveResult() {
+    saveLocal();
+}
+
+function saveLocal() {
+    localStorage.setItem("score", JSON.stringify(score));
+    localStorage.setItem("currentDate", JSON.stringify(currentDate));
+}
+
+function load() {
+    let savedScore = localStorage.getItem('score');
+    let savedDate = localStorage.getItem('currentDate');
+    if(savedScore && savedDate) {
+        results = JSON.parse(savedScore);
+        resultsDate = JSON.parse(savedDate);
+    }
+    console.log(results);
+    console.log(resultsDate);
+    
+}
+
+function getCurrentDate() {
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0');
+    let yy = today.getFullYear();
+
+    today = dd + '/' + mm + '/' + yy;
+    currentDate.push(today);
+    console.log(today);
+}
 
 
 
